@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+  {% load static %}
+ <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login-Page</title> <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <section>
+    <div class="img8x">
+      <img src="{% static 'img/log1.jpg' %}">
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h3>Login</h3>
+        <form method="post">
+          {% csrf_token %}
+    <div class="inputBx">
+        <span>Email</span>
+        <input type="text" name="">
+      </div> 
+      <div class="inputBx">
+      <span>Password</span>
+      <input type="password" name="">
+      </div> 
+      <div class="remember">
+        <label><input type="checkbox" name=""> Remember me</label>
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Sign in" name="">
+      </div>
+      <div class="inputBx">
+        <p>Don't have an account? <a href="http://127.0.0.1:8000/signup/">Sign up</a></p>
+      </div>
+           </form>
+      </div>
+      </div>
+      </section>
+      </body>
+
